@@ -14,6 +14,32 @@
 - 三个逆向推演关卡：由玩家编排敌人，系统部署防御塔。
 - AI 辅助美术与可选的 WAV 音效和音乐。
 
+## 游戏展示
+
+### 主界面
+
+继续当前时间线、开始新任务，或进入档案与设置。
+
+![时间修补局主界面](doc/screenshots/main-menu.png)
+
+### 塔防战斗
+
+围绕地形与传送路线部署、升级防御装置，阻止异常体突破时间核心。
+
+![塔防战斗界面](doc/screenshots/gameplay.png)
+
+### 关卡编辑器
+
+绘制地形和路线，保存、加载地图，并直接开始演练。
+
+![自定义关卡编辑器](doc/screenshots/level-editor.png)
+
+### 逆向推演
+
+在点数预算内编排敌人队列，挑战系统自动部署的防线。
+
+![逆向推演敌人编排](doc/screenshots/reverse-simulation.png)
+
 ## 构建与运行
 
 在 Qt Creator 中打开 `src/TimeRepairBureau.pro`，选择支持 C++17 的 Qt 6 Desktop Kit。项目面向 Windows，参考环境为 Qt 6.5.3 MinGW 64-bit。

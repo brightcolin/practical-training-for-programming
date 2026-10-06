@@ -4,6 +4,12 @@
 
 C++ 编程练习与 Qt 应用项目集合，包含使用 C++17 和 Qt Widgets 开发的二维塔防游戏《时间修补局》。
 
+## 项目预览
+
+![时间修补局战斗界面](final-project/time-repair-bureau/doc/screenshots/gameplay.png)
+
+《时间修补局》结合网格塔防、地形效果、升级系统与自定义关卡编辑器。更多画面见 [游戏项目展示](final-project/time-repair-bureau/README.zh-CN.md#游戏展示)。
+
 ## 项目
 
 | 项目 | 内容 | 源码 |

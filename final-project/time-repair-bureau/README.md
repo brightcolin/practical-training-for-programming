@@ -14,6 +14,32 @@ A story-driven 2D grid-based tower defense game built with C++17 and Qt Widgets.
 - Three reverse-simulation levels: arrange enemies while the system deploys defensive towers.
 - AI-assisted artwork and optional WAV sound effects and music.
 
+## Screenshots
+
+### Main menu
+
+Continue a timeline, start a new mission, or open the archive and settings.
+
+![Time Repair Bureau main menu](doc/screenshots/main-menu.png)
+
+### Tower defense
+
+Deploy and upgrade defensive devices along routes shaped by terrain and portals.
+
+![Tower defense gameplay](doc/screenshots/gameplay.png)
+
+### Level editor
+
+Paint terrain, connect a route, then save, load, and playtest a custom map.
+
+![Custom level editor](doc/screenshots/level-editor.png)
+
+### Reverse simulation
+
+Build an enemy lineup within a point budget and challenge the system's defenses.
+
+![Reverse simulation enemy lineup](doc/screenshots/reverse-simulation.png)
+
 ## Build and run
 
 Open `src/TimeRepairBureau.pro` in Qt Creator and select a Qt 6 Desktop Kit with C++17 support. The project targets Windows; Qt 6.5.3 MinGW 64-bit is the reference configuration.

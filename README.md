@@ -4,6 +4,12 @@
 
 A collection of C++ programming exercises and Qt applications, including **Time Repair Bureau**, a 2D tower defense game built with C++17 and Qt Widgets.
 
+## Preview
+
+![Time Repair Bureau gameplay](final-project/time-repair-bureau/doc/screenshots/gameplay.png)
+
+**Time Repair Bureau** combines grid-based tower defense, terrain effects, upgrades, and a custom level editor. Explore the [game showcase](final-project/time-repair-bureau/#screenshots).
+
 ## Projects
 
 | Project | Description | Source |
