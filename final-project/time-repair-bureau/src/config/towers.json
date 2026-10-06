@@ -1,0 +1,44 @@
+{
+  "shooter": {
+    "cost": 60,
+    "range": 155,
+    "damage": 30,
+    "cooldown": 0.58,
+    "hp": 100
+  },
+  "slow": {
+    "cost": 85,
+    "range": 145,
+    "damage": 15,
+    "cooldown": 0.95,
+    "hp": 90
+  },
+  "splash": {
+    "cost": 120,
+    "range": 165,
+    "damage": 26,
+    "cooldown": 1.35,
+    "hp": 100
+  },
+  "laser": {
+    "cost": 150,
+    "range": 190,
+    "damage": 24,
+    "cooldown": 1.05,
+    "hp": 100
+  },
+  "resource": {
+    "cost": 150,
+    "range": 0,
+    "damage": 0,
+    "cooldown": 0,
+    "hp": 85
+  },
+  "wall": {
+    "cost": 50,
+    "range": 0,
+    "damage": 0,
+    "cooldown": 0,
+    "hp": 260
+  }
+}

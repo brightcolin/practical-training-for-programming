@@ -34,3 +34,5 @@ __pycache__/
 Thumbs.db
 .env
 .env.*
+# Pixabay audio stays in the local archive until individual source records exist.
+/final-project/time-repair-bureau/src/assets/sfx/*.wav
