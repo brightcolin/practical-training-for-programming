@@ -23,4 +23,4 @@ Enter the number of values `n` and a target, followed by `n` nonnegative integer
 
 If the target is reachable, an expression is printed. Otherwise, the program prints `No` followed by the smallest reachable value greater than the target, or `-1` if none exists.
 
-Use `build/console/TargetSolver.exe`. The original assignment assumes valid input with `n >= 1`; input validation and overflow handling have not been added.
+Use `build/console/TargetSolver.exe`. Input must be valid with `n >= 1` and values within the unsigned-integer range.

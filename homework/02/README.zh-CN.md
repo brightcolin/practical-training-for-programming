@@ -23,4 +23,4 @@
 
 找到目标时输出表达式；无解时输出 `No`，随后输出最小的更大可达值，无更大可达值则输出 `-1`。
 
-程序为 `build/console/TargetSolver.exe`。原作业假设 `n >= 1` 且输入有效，未增加输入校验或溢出处理。
+程序为 `build/console/TargetSolver.exe`。输入需满足 `n >= 1`，且数值应在无符号整数范围内。

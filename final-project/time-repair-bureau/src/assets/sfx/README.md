@@ -2,14 +2,17 @@
 
 # Audio Resources
 
-The original submission used 18 audio files selected from Pixabay and converted to WAV. They are excluded from this public archive; the original course folder and local archive copy retain them.
+The sound manager loads WAV resources from `assets/sfx/` beside the executable. Missing files make their corresponding sound effects or music silent.
 
-Missing audio makes the corresponding sounds silent. Source code and artwork remain available. The qmake project's DISTFILES list retains the original filenames; it is not currently intended to create a source distribution containing those audio files.
+## Resource groups
 
-## Restore audio from your original copy
+- Interface: clicks, terminal startup, dialogue, and error feedback.
+- Combat: deployment, upgrades, skills, bosses, and core damage.
+- Results: victory, failure, and codex unlocks.
+- Music: menu, battle, story, and boss tracks.
 
-1. Copy the 18 `.wav` files from your original project's `src/assets/sfx/` into this directory.
-2. After building, copy the entire `assets/` directory beside the executable.
-3. Before including audio in the public repository, record each asset's name, original download URL, creator, license information, and modifications; check the distribution conditions, then adjust the WAV exclusion rule in the root `.gitignore`.
+Expected filenames and uses are listed in the [asset notes](../../../doc/素材来源.md) and the qmake project's DISTFILES list.
 
-Original filenames and uses are listed in the [asset notes](../../../doc/素材来源.md).
+## Deployment
+
+Place WAV files in this directory and copy the entire `assets/` directory beside the executable after building. Use audio resources according to their respective licenses.

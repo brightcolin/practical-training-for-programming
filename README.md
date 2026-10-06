@@ -2,50 +2,53 @@
 
 # Practical Training For Programming
 
-A source archive of five homework assignments and the final project, **Time Repair Bureau**. Original coursework code is preserved; navigation and build instructions are added separately.
+A collection of C++ programming exercises and Qt applications, including **Time Repair Bureau**, a 2D tower defense game built with C++17 and Qt Widgets.
 
-## Assignments
+## Projects
 
-| Assignment | Topics | Directory |
+| Project | Description | Source |
 | --- | --- | --- |
-| 1 | Object-oriented programming, polymorphism, templates, operator overloading | [Homework 01](homework/01/) |
-| 2 | 24-point expressions and target-value expressions | [Homework 02](homework/02/) |
-| 3 | Six loop orders for 3D matrix addition and performance comparison | [Homework 03](homework/03/) |
-| 4 | Qt numeric keypad and temperature conversion | [Homework 04](homework/04/) |
-| 5 | Qt event filtering and Enter-key input handling | [Homework 05](homework/05/) |
-| Final project | C++17 / Qt Widgets tower defense game | [Time Repair Bureau](final-project/time-repair-bureau/) |
+| Object-oriented programming | Polymorphism, function templates, and operator overloading | [Homework 01](homework/01/) |
+| Expression solvers | The 24-point game and target-value expressions | [Homework 02](homework/02/) |
+| Matrix performance | Six traversal orders for 3D matrix addition | [Homework 03](homework/03/) |
+| Qt signals and slots | Numeric keypad and temperature converter | [Homework 04](homework/04/) |
+| Qt event handling | Event filtering and keyboard input | [Homework 05](homework/05/) |
+| Time Repair Bureau | Story-driven tower defense, a level editor, and reverse simulations | [Final project](final-project/time-repair-bureau/) |
 
-## What is scripts/?
+## Requirements
 
-`scripts/` contains a build helper added during archiving, separate from the original assignment code.
+- C++17-compatible GCC / MinGW for the console programs.
+- Windows PowerShell for the console build command below.
+- Qt 6.5 or later and CMake 3.19 or later for the Qt homework projects.
+- Qt 6 with qmake for Time Repair Bureau; Windows with a MinGW Desktop Kit is recommended.
 
-`scripts/build-console.ps1` is a Windows PowerShell script. It invokes GCC / MinGW to compile the six console programs from assignments 1-3 into `build/console/`. It runs only when invoked manually, does not compile the Qt projects, and does not rewrite source files.
+## Build
 
-Run from the repository root:
+### Console programs
+
+With `g++` on PATH, run from the repository root:
 
 ```powershell
 ./scripts/build-console.ps1
 ```
 
-If `g++` is not on PATH, specify the actual compiler path on your computer:
+The six executables are generated in `build/console/`. The compiler's runtime libraries must be available on PATH when running them. Each project's README describes its input and output.
 
-```powershell
-./scripts/build-console.ps1 -Compiler 'D:/msys64/ucrt64/bin/g++.exe'
-```
+### Qt applications
 
-To run the generated programs, make sure the compiler's runtime-library directory is on PATH.
+Open a project's `CMakeLists.txt` in Qt Creator, select a Desktop Kit, then build and run:
 
-## Qt projects
+- `homework/04/QtKeypad/CMakeLists.txt`
+- `homework/04/TemperatureConverter/CMakeLists.txt`
+- `homework/05/EventFilter/CMakeLists.txt`
 
-Assignments 4-5 require Qt 6.5 or later and CMake 3.19 or later. Open each project's `CMakeLists.txt` in Qt Creator and select a Desktop Kit.
+For Time Repair Bureau, open `final-project/time-repair-bureau/src/TimeRepairBureau.pro`. See its [build and run guide](final-project/time-repair-bureau/doc/编译运行说明.md) for resource deployment.
 
-The final project uses `final-project/time-repair-bureau/src/TimeRepairBureau.pro`. See the [build and run instructions](final-project/time-repair-bureau/doc/编译运行说明.md).
+## Time Repair Bureau
 
-## Archive scope and checks
+- Six story levels with bosses, defense towers, enemies, terrain, resources, and upgrades.
+- Story communications, interactive tutorials, an archive, and a codex.
+- JSON configuration, saved progress, and a custom level editor.
+- Three reverse-simulation levels with player-arranged enemies.
 
-- Source code, Qt project files, game configuration, and artwork are included. Original coursework code is unchanged.
-- Lecture materials, reports, self-evaluation sheets, submission archives, videos, saved progress, build products, and Qt runtime libraries are excluded.
-- The public [AI disclosure](final-project/time-repair-bureau/doc/AI工具使用声明.md) omits the student's name and ID. [Asset notes](final-project/time-repair-bureau/doc/素材来源.md) are retained.
-- The 18 Pixabay WAV files remain local and are excluded from the public repository. Missing audio makes the corresponding sounds silent; see the [audio notes](final-project/time-repair-bureau/src/assets/sfx/README.md) for restoration.
-- All six console programs compiled and passed sample-run checks. Qt projects were not rebuilt during archiving because the original Qt installation is no longer present.
-- No repository-wide open-source license has been added. Course templates and third-party assets remain subject to their original terms.
+See the [project README](final-project/time-repair-bureau/), [asset notes](final-project/time-repair-bureau/doc/素材来源.md), and [AI development disclosure](final-project/time-repair-bureau/doc/AI工具使用声明.md).
