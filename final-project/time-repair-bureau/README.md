@@ -1,22 +1,24 @@
-# 时间修补局 · Time Repair Bureau
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-课程最终大作业：使用 C++17 与 Qt Widgets 实现的二维网格塔防游戏。
+# Time Repair Bureau
 
-## 主要功能
+The course's final project: a 2D grid-based tower defense game built with C++17 and Qt Widgets.
 
-- 六个主线关卡、防御塔与敌人类型、地形、Boss、资源和升级系统。
-- 剧情通讯、暂停式教学、档案图鉴与设置页面。
-- JSON 数值配置、进度保存、自定义关卡编辑器。
-- 三个逆向推演关卡，玩家编排敌人，由系统自动部署防御塔。
-- AI 辅助生成的视觉素材，以及支持 WAV 音效与音乐的声音管理模块。
+## Features
 
-## 目录
+- Six story levels, defense towers, enemy types, terrain, bosses, resources, and upgrades.
+- Story communications, paused tutorials, an archive, a codex, and settings.
+- JSON configuration, saved progress, and a custom level editor.
+- Three reverse-simulation levels where the player arranges enemies and the system places defense towers.
+- AI-assisted artwork and a sound manager with WAV sound-effect and music support.
 
-- `src/`：源码、qmake 工程、`config/` 配置和 `assets/ai/` 图片。
-- `doc/`：构建说明、素材来源和 AI 工具使用声明。
+## Layout and building
 
-在 Qt Creator 中打开 `src/TimeRepairBureau.pro`。原项目使用 Qt 6.5.3 MinGW 64-bit；当前归档没有附带编译好的程序与 Qt DLL。完整构建与资源部署方法见 [编译运行说明](doc/编译运行说明.md)。
+- `src/`: source files, the qmake project, `config/`, and artwork in `assets/ai/`.
+- `doc/`: build instructions, asset notes, and AI disclosure.
 
-公开仓库暂未收录原提交版本的 18 个 Pixabay 音频文件。缺少音频时程序对应声音会静音，恢复方法见 [音频说明](src/assets/sfx/README.md)。原 qmake 工程的音频清单保留，用于说明原版资源组成。
+Open `src/TimeRepairBureau.pro` in Qt Creator. The original project used Qt 6.5.3 MinGW 64-bit. Compiled executables and Qt DLLs are not included. See the [build and run instructions](doc/编译运行说明.md) for building and resource deployment.
 
-作者与素材声明见 [AI 工具使用声明](doc/AI工具使用声明.md) 和 [素材来源](doc/素材来源.md)。
+The original submission's 18 Pixabay audio files are excluded from the public archive. Missing audio makes corresponding sounds silent; see the [audio notes](src/assets/sfx/README.md). The qmake file retains the original audio filename list.
+
+See the [AI disclosure](doc/AI工具使用声明.md) and [asset notes](doc/素材来源.md) for development and resource information.

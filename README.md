@@ -1,47 +1,51 @@
-# Practical Training For Programming · 程序设计实训
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-本仓库整理课程的 5 次平时作业与最终大作业《时间修补局》。原始作业源码与收录的图片、配置保持原样，补充目录导航、构建脚本和说明。
+# Practical Training For Programming
 
-## 作业导航
+A source archive of five homework assignments and the final project, **Time Repair Bureau**. Original coursework code is preserved; navigation and build instructions are added separately.
 
-| 作业 | 内容 | 路径 |
+## Assignments
+
+| Assignment | Topics | Directory |
 | --- | --- | --- |
-| 1 | 面向对象、多态、函数模板、运算符重载 | [homework/01](homework/01/) |
-| 2 | 24 点求解、加法与乘法目标值求解 | [homework/02](homework/02/) |
-| 3 | 三维矩阵加法的六种循环顺序与性能比较 | [homework/03](homework/03/) |
-| 4 | Qt 数字键盘、摄氏与华氏温度转换 | [homework/04](homework/04/) |
-| 5 | Qt 事件过滤器与回车输入处理 | [homework/05](homework/05/) |
-| 最终大作业 | C++17 / Qt Widgets 塔防游戏《时间修补局》 | [final-project/time-repair-bureau](final-project/time-repair-bureau/) |
+| 1 | Object-oriented programming, polymorphism, templates, operator overloading | [Homework 01](homework/01/) |
+| 2 | 24-point expressions and target-value expressions | [Homework 02](homework/02/) |
+| 3 | Six loop orders for 3D matrix addition and performance comparison | [Homework 03](homework/03/) |
+| 4 | Qt numeric keypad and temperature conversion | [Homework 04](homework/04/) |
+| 5 | Qt event filtering and Enter-key input handling | [Homework 05](homework/05/) |
+| Final project | C++17 / Qt Widgets tower defense game | [Time Repair Bureau](final-project/time-repair-bureau/) |
 
-## 编译普通 C++ 作业
+## What is scripts/?
 
-需要支持 C++17 的 GCC / MinGW。Windows PowerShell 在仓库根目录执行：
+`scripts/` contains a build helper added during archiving, separate from the original assignment code.
+
+`scripts/build-console.ps1` is a Windows PowerShell script. It invokes GCC / MinGW to compile the six console programs from assignments 1-3 into `build/console/`. It runs only when invoked manually, does not compile the Qt projects, and does not rewrite source files.
+
+Run from the repository root:
 
 ```powershell
 ./scripts/build-console.ps1
 ```
 
-如果 `g++` 不在 PATH 中，可指定编译器：
+If `g++` is not on PATH, specify the actual compiler path on your computer:
 
 ```powershell
 ./scripts/build-console.ps1 -Compiler 'D:/msys64/ucrt64/bin/g++.exe'
 ```
 
-生成的 6 个程序位于 `build/console/`。运行时，请确保编译器对应的运行库目录在 PATH 中。
+To run the generated programs, make sure the compiler's runtime-library directory is on PATH.
 
-## 编译 Qt 作业
+## Qt projects
 
-作业 4、5 使用 Qt 6.5 或以上及 CMake 3.19 或以上。使用 Qt Creator 分别打开各项目的 `CMakeLists.txt`，配置 Desktop Kit 后构建。
+Assignments 4-5 require Qt 6.5 or later and CMake 3.19 or later. Open each project's `CMakeLists.txt` in Qt Creator and select a Desktop Kit.
 
-最终大作业保留 qmake 工程，详见其 [编译运行说明](final-project/time-repair-bureau/doc/编译运行说明.md)。
+The final project uses `final-project/time-repair-bureau/src/TimeRepairBureau.pro`. See the [build and run instructions](final-project/time-repair-bureau/doc/编译运行说明.md).
 
-## 归档范围与声明
+## Archive scope and checks
 
-- 收录作业源码、Qt 工程、游戏配置和图片。
-- 课件、作业报告、自评表、提交压缩包、演示视频、编译缓存、可执行文件和 Qt 运行库不收录。
-- 整理版未改变原始 `.cpp`、`.h`、`.ui`、`.pro` 与已有 CMake 工程；大作业的三个展开副本经 SHA-256 比较完全一致。
-- 保留大作业的 [AI 工具使用声明](final-project/time-repair-bureau/doc/AI工具使用声明.md) 和 [素材来源说明](final-project/time-repair-bureau/doc/素材来源.md)。声明副本省略姓名与学号。
-- 原作业音频来自 Pixabay。公开仓库暂不收录 18 个 WAV 文件，因为现有资料未列出逐项下载链接与授权记录；这些文件保留在原课程目录和本地整理副本。游戏缺少音频时对应声音会静音，恢复说明见 [assets/sfx/README.md](final-project/time-repair-bureau/src/assets/sfx/README.md)。
-- 本仓库未添加统一开源许可证。课程模板及第三方素材的权利以各自原始条件为准。
-
-本地归档验证结果见 [docs/验证记录.md](docs/验证记录.md)。
+- Source code, Qt project files, game configuration, and artwork are included. Original coursework code is unchanged.
+- Lecture materials, reports, self-evaluation sheets, submission archives, videos, saved progress, build products, and Qt runtime libraries are excluded.
+- The public [AI disclosure](final-project/time-repair-bureau/doc/AI工具使用声明.md) omits the student's name and ID. [Asset notes](final-project/time-repair-bureau/doc/素材来源.md) are retained.
+- The 18 Pixabay WAV files remain local and are excluded from the public repository. Missing audio makes the corresponding sounds silent; see the [audio notes](final-project/time-repair-bureau/src/assets/sfx/README.md) for restoration.
+- All six console programs compiled and passed sample-run checks. Qt projects were not rebuilt during archiving because the original Qt installation is no longer present.
+- No repository-wide open-source license has been added. Course templates and third-party assets remain subject to their original terms.

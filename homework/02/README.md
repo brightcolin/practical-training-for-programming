@@ -1,24 +1,26 @@
-# 作业 2：表达式求解
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-## problem1：24 点
+# Homework 2: Expression Solvers
 
-输入 4 个整数，输出能够得到 24 的表达式；无解时输出 `no`。
+## problem1: The 24-point game
+
+Enter four integers. The program prints expressions that evaluate to 24, or `no` if none are found.
 
 ```text
 1 2 3 4
 ```
 
-运行仓库构建脚本后，程序为 `build/console/TwentyfourSolver.exe`。
+After running the repository's build script, use `build/console/TwentyfourSolver.exe`.
 
-## problem2：目标值
+## problem2: Target-value expressions
 
-第一行输入数字个数 `n` 和目标值，随后输入 `n` 个非负整数。源码以输入顺序逐步应用加法或乘法；运算按从左到右的状态递推计算。输出的表达式字符串没有补充括号，请结合这一计算规则阅读。
+Enter the number of values `n` and a target, followed by `n` nonnegative integers. The solver applies addition or multiplication in input order, evaluating each step from left to right. Output expressions omit parentheses, so read them according to this rule.
 
 ```text
 3 9
 1 2 3
 ```
 
-找到目标时输出表达式；无解时输出 `No`，随后输出最小的更大可达值，无更大可达值则输出 `-1`。
+If the target is reachable, an expression is printed. Otherwise, the program prints `No` followed by the smallest reachable value greater than the target, or `-1` if none exists.
 
-程序为 `build/console/TargetSolver.exe`。原作业假设 `n >= 1` 且输入有效，未增加输入校验或溢出处理。
+Use `build/console/TargetSolver.exe`. The original assignment assumes valid input with `n >= 1`; input validation and overflow handling have not been added.

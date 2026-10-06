@@ -1,13 +1,15 @@
-# 音频资源说明
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-原作业使用作者从 Pixabay 选择并转换为 WAV 的 18 个音频文件。本次公开归档暂不上传这些文件；原课程目录和本地整理副本仍保留全部音频。
+# Audio Resources
 
-游戏缺少音频时会静音对应反馈，源码和图片可以继续使用。qmake 工程 `src/TimeRepairBureau.pro` 的 DISTFILES 清单保留原音频文件名，暂不用于制作包含音频的源码分发包。
+The original submission used 18 audio files selected from Pixabay and converted to WAV. They are excluded from this public archive; the original course folder and local archive copy retain them.
 
-恢复完整声音：
+Missing audio makes the corresponding sounds silent. Source code and artwork remain available. The qmake project's DISTFILES list retains the original filenames; it is not currently intended to create a source distribution containing those audio files.
 
-1. 从自己的原作业副本，将 `src/assets/sfx/` 中的 18 个 `.wav` 文件放入本目录。
-2. 构建后将整个 `assets/` 复制到可执行文件同级。
-3. 若要把音频加入公开仓库，先补充每个素材的名称、原下载链接、作者、许可记录及修改情况，核对分发条件，再调整根目录 `.gitignore` 的 WAV 排除规则。
+## Restore audio from your original copy
 
-原音频文件名与用途见 [素材来源.md](../../../doc/素材来源.md)。
+1. Copy the 18 `.wav` files from your original project's `src/assets/sfx/` into this directory.
+2. After building, copy the entire `assets/` directory beside the executable.
+3. Before including audio in the public repository, record each asset's name, original download URL, creator, license information, and modifications; check the distribution conditions, then adjust the WAV exclusion rule in the root `.gitignore`.
+
+Original filenames and uses are listed in the [asset notes](../../../doc/素材来源.md).

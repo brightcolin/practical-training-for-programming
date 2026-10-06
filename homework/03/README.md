@@ -1,7 +1,9 @@
-# 作业 3：循环顺序与程序性能
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-`CP_Analysis` 实现三维矩阵加法的 IJK、IKJ、JIK、JKI、KIJ、KJI 六种循环顺序。
+# Homework 3: Loop Order and Performance
 
-`CP_AnalysisTest.cpp` 使用边长 64、128、256 的矩阵运行六种算法，打印执行时间与结果元素总和。测试结果可用于比较访问顺序对内存局部性的影响；耗时受机器和编译选项影响。
+`CP_Analysis` implements six loop orders for 3D matrix addition: IJK, IKJ, JIK, JKI, KIJ, and KJI.
 
-构建后运行 `build/console/CP_AnalysisTest.exe`，无需输入。
+`CP_AnalysisTest.cpp` runs each method on matrices with side lengths 64, 128, and 256. It prints elapsed times and the sum of result elements. The timings illustrate the effect of memory access order and depend on hardware and compiler options.
+
+After building, run `build/console/CP_AnalysisTest.exe`. No input is required.

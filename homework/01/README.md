@@ -1,9 +1,11 @@
-# 作业 1：面向对象程序设计复习
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-三个独立程序：
+# Homework 1: Object-Oriented Programming
 
-- `CP_GetArea.cpp` / `.h`：使用 Shape、Circle、Rectangle、Square 展示多态和面积计算。
-- `CP_MaxMain.cpp` / `.h`：比较整数、浮点数和字符串的函数模板。
-- `CP_Teammate.cpp` / `.h`：Member 与 MemberList，重载输出运算符及按姓名查找年龄的下标运算符。
+Three independent demonstration programs:
 
-使用仓库根目录构建脚本后，分别运行 `build/console/CP_GetArea.exe`、`CP_MaxMain.exe`、`CP_Teammate.exe`。三个程序均使用源码中的演示数据，不需要标准输入。
+- `CP_GetArea.cpp` / `.h`: polymorphism and area calculation using Shape, Circle, Rectangle, and Square.
+- `CP_MaxMain.cpp` / `.h`: a maximum-value template for integers, floating-point values, and strings.
+- `CP_Teammate.cpp` / `.h`: Member and MemberList, stream output, and name-based age lookup with an overloaded subscript operator.
+
+After running the repository's console build script, run `CP_GetArea.exe`, `CP_MaxMain.exe`, or `CP_Teammate.exe` from `build/console/`. All three use built-in example data and require no standard input.
