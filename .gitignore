@@ -1,0 +1,36 @@
+# Build products and IDE-local settings
+build/
+build-*/
+cmake-build-*/
+.check/
+.vs/
+.qtcreator/
+.qtc_clangd/
+*.user
+*.user.*
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+*.pdb
+*.ilk
+*.log
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+Makefile.*
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+# Generated saves and local state
+data/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.*
